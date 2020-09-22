@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {  
+  font-family: 'Fira Sans', sans-serif;
+}
+
+/* Navbar */
+nav {
+  display: flex;  
+  justify-content: space-between;   
+  padding: 0 100px;  
+  height: 60px;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  border: none;
+  position: sticky;
+  top: 0;      
+}
+
+nav ul {
+  display: flex;  
+  list-style-type: none;
+  width: 40%;
+  justify-content: space-between;  
+}
+
+nav ul li a {  
+  text-decoration: none;
+  color: #0E2A75;
+}
+
+nav ul li a:hover {
+  color: #FCB501;
+}
+
+.navbrand h2 {
+  font-family: 'Berkshire Swash', cursive;
+  color: #FCB501;
+}
+
+header {
+  display: inline;  
+}
+
+/* akhir nav */
+
+
+/* article hero */
+main .hero-bg {
+  display: flex;    
+  flex-direction: row;
+  height: 692px;  
+  background-image: url('../images/background/bg-hero.PNG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;  
+  padding: 0px 100px;
+}
+
+main .hero-picture {
+  flex-basis: 50%;
+  padding-top: 90px;  
+}
+
+main .hero-picture img {
+  width: 100%;
+}
+
+main .content-hero {
+  flex-basis: 50%;   
+  display: flex;
+  flex-direction: column;  
+}
+
+main .content-hero h1 {
+  font-family: 'Merienda', cursive;
+  font-size: 34px;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+  font-weight: 500;
+  color: #FCB501;
+  margin-top: 120px;    
+}
+
+main .content-hero p {
+  font-family: 'Merienda', cursive;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  color: #b3b3b3;  
+}
+
+main .content-hero button {    
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 18px;
+  width: 177px;
+  height: 53px;
+  border-radius: 30px;
+  border: none;
+  background-color: #0C8CFB;
+  color: white;    
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);  
+  outline: none;
+  cursor: pointer;
+  margin: 130px auto 0px;
+  transition: 0.3s;
+}
+
+main .content-hero button:hover {    
+  font-size: 19px;
+}
+
+/* akhir article hero */
+
+
+/* article menarik */
+  .menarik {
+    display: flex;
+    flex-direction: column;        
+    height: auto;    
+    padding: 40px 100px;    
+    background-color: #F8F9FD;
+    text-align: center;    
+  }
+
+  .menarik .menarik-title {
+    font-size: 24px;
+    color: #0E2A75;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+  }
+
+  .menarik .content-menarik {    
+    display: flex;               
+    height: 400px;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: chocolate; */
+  }
+
+  .content-menarik > section {
+    flex-basis: 32%;    
+    /* width: 32%; */
+    height: 400px;
+    padding: 20px;
+    border: none;
+    border-radius: 20px 20px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+  }
+
+  .content-menarik section img {
+    width: 90%;
+  }
+
+  .content-menarik section h5 {
+    font-size: 18px;
+    margin-top: 10px;   
+    font-weight: bold; 
+    letter-spacing: 1px;
+    color: #0E2A75;
+  }
+
+  .content-menarik section p {
+    padding: 0px 30px;
+    font-size: 15px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    color: #4e4e4e;
+  }
+
+
+/* akhir article menarik */
+
+/* article testimonies */
+.testimonies {
+  display: flex;
+  flex-direction: column;        
+  height: auto;    
+  padding: 40px 100px;    
+  background-image: url('../images/background/bg-hero.PNG');  
+  background-position: center center;
+  text-align: center;        
+}
+
+.testimonies .testimonies-title {
+  font-size: 24px;
+  color: #0E2A75;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+
+.testimonies .content-testimonies {    
+  display: flex;               
+  height: 400px;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: chocolate; */
+}
+
+.content-testimonies > section {
+  flex-basis: 24%;      
+  height: 400px;
+  padding: 20px;
+  border: none;
+  border-radius: 20px 20px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.content-testimonies section img {
+  width: 90%;
+}
+
+.content-testimonies section h5 {
+  font-size: 18px;
+  margin-top: 10px;   
+  font-weight: bold; 
+  letter-spacing: 1px;
+  color: #0E2A75;
+}
+
+.content-testimonies section p {
+  padding: 0px 30px;
+  font-size: 15px;
+  margin-top: 15px;
+  letter-spacing: 1px;
+  color: #4e4e4e;
+}
+
+.content-testimonies > section:hover {
+  padding: 5px;  
+  box-shadow: 0px 0px 10px rgba(14, 42, 117, 0.9);
+  background-color: #a1a7b9;    
+}
+
+.content-testimonies > section:hover h5,
+.content-testimonies > section:hover p {
+  color: white;
+}
+
+
+/* akhir article testimonies */
+
+
+/* article tentang */
+.tentang {        
+  height: auto;    
+  padding: 40px 100px;      
+  text-align: center;
+  background-color: #f7f9ff;  
+}
+
+.tentang .tentang-title {
+  font-size: 24px;
+  color: #0E2A75;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+
+.content-tentang {  
+  height: auto;
+  padding-bottom: 50px;  
+  overflow: auto;
+  padding: 20px;
+}
+
+.content-tentang .container-content-tentang {
+  float: left;
+  width: 65%;
+  height: auto;    
+  padding-right: 10px;  
+}
+
+aside {
+  float: right;
+  width: 35%;
+  padding-left: 10px;
+  height: 200px;  
+}
+
+.isi-content-tentang h5 {
+  font-size: 22px;
+  color: #0E2A75;
+  letter-spacing: 1px;
+}
+
+.isi-content-tentang p {
+  font-size: 18px;
+  color: #686868;
+  letter-spacing: 1px;
+  padding: 20px;
+  line-height: 150%;
+  font-weight: 400;
+}
+
+
+.card {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 20px 20px;
+  padding: 20px;  
+}
+
+.sejarah {
+  background-color: #ffffff;
+}
+
+.kontak {
+  display: flex;
+  flex-direction: column;  
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+
+.kontak span img {  
+  height: 60%;  
+  padding-right: 10px;  
+}
+
+.kontak span {  
+  padding: 0px 10px;  
+  height: 60px;  
+  font-size: 22px;
+  color: #0E2A75;
+}
+
+.kontak h5 {
+  font-size: 22px;
+  color: #0E2A75;
+  margin-bottom: 25px;  
+}
+/* akhir article tentang */
+
+/* aside */
+.profile {
+  text-align: center;
+  background-color: #ffffff;
+}
+.profile h3 {
+  font-size: 26px;
+  color: #0E2A75;
+  letter-spacing: 1px;
+}
+
+.profile figure img {
+  margin-top: 25px;
+  width: 70%;
+  border-radius: 50%;
+  border: 5px solid gray;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.profile section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.profile span {  
+  padding: 0px 10px;  
+  height: 40px;  
+  font-size: 18px;
+  color: #0E2A75;  
+}
+
+.profile section span img {  
+  height: 70%;  
+  padding-right: 10px;  
+}
+
+.profile .quotes {  
+  margin-top: 40px;
+  font-size: 17px;  
+}
+
+.profile section p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 150%;
+  color: #838383;
+  font-style: italic;
+  font-weight: 300;
+  padding: 0px 10px 20px 10px;
+}
+
+/* quotes */
+.profile section #btn-quotes-prev, #btn-quotes-next {
+  font-size: 15px;
+  cursor: pointer;
+  color: #e7ecf8;
+  padding: 8px 20px;
+  margin: 0 auto;    
+  border: none;
+  outline: none;
+  background-color: #0C8CFB;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  letter-spacing: 1px;  
+}
+
+.profile section .button-quote {
+  margin: 10px 0px 20px 0px;
+}
+
+/* akhir quotes */
+
+/* akhir aside */
+
+/* footer */
+footer {
+  background-color: #a1a7b9;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+/* akhir footer */
+
+
+/* Responsive untuk mobile phone */
+
+/* Untuk hp */
+@media screen and (max-width: 1000px) {
+  nav {
+    padding: 0 50px;  
+  }
+
+  nav .navbrand {
+    display: none;
+  }
+
+  nav ul {
+    width: 100%;
+  }
+
+  main .hero-bg {
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+    padding: 0;        
+    height: auto;    
+    padding-bottom: 30px;
+  }
+
+  main .hero-picture {          
+    padding-top: 15px;  
+    padding-bottom: 0px;       
+    padding-left: 30px;
+    padding-right: 30px;    
+  }
+
+  main .content-hero h1 {
+    margin-top: 0px;
+    font-size: 20px;
+  }
+
+  main .content-hero p {
+    font-size: 12px;
+    margin-left: 0;
+  }
+
+  main .hero-bg button {
+    width: 120px;
+    height: 40px;
+    margin-top: 30px;    
+    font-size: 16px;
+  }
+
+  /* article menarik */
+
+  .menarik {
+    height: auto;
+    padding: 30px;    
+  }
+
+  .menarik .content-menarik {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .menarik .content-menarik > section {
+    margin-top: 10px;
+    margin-bottom: 10px;    
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .menarik .menarik-title {
+    margin-bottom: 20px;
+  }
+  /* akhir article menarik */
+
+  /* article testimonies */
+
+  .testimonies {
+    height: auto;
+    padding: 30px;    
+  }
+
+  .testimonies .content-testimonies {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .testimonies .content-testimonies > section {
+    margin-top: 10px;
+    margin-bottom: 10px;    
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .testimonies .testimonies-title {
+    margin-bottom: 20px;
+  }
+  /* akhir article testimonies */
+
+  /* article tentang */
+
+
+.content-tentang {  
+  height: auto;  
+  overflow: none;
+  padding: 0 10px 20px 10px;  
+}
+
+.tentang {        
+  height: auto;    
+  padding: 20px 20px;      
+  text-align: center;
+  background-color: #f7f9ff;  
+}
+
+.tentang .tentang-title {
+  margin-bottom: 20px;
+}
+
+.isi-content-tentang p {
+  padding: 10px;
+}
+
+
+.content-tentang .container-content-tentang,
+aside {
+  width: 100%;
+  height: auto;
+  padding: 0; 
+}
+
+aside {
+  margin-top: 20px;
+}
+
+
+
+  /* akhir article tentang */
+
+
+
+}
+
+
+
